@@ -76,6 +76,9 @@ optional arguments:
 
 clean() { influx-cleaner --host 192.168.1.2 --dbname myinfluxdb -m $1 -w $2; }
 
+clean TestMeasurement "value < -100"
 clean BogusHumidity "value < 0"
 clean BogusTemperature "value < -100"
 ```
+
+You can add `-y` parameter if you do not want to confirm every clean
