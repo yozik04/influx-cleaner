@@ -1,7 +1,7 @@
 # influx-cleaner
 A command line tool to remove invalid data from InfluxDB.
 
-I am using some myinfluxdb bindings that from time to time produce invalid data. This invalid data gets into InfluxDB. It is complicated to clean it.
+I am using some Openhab2 bindings that from time to time produce invalid data. This invalid data gets into InfluxDB. It is complicated to clean it.
 
 Tool is not meant to delete a large amount of data. No deletion performance optimization is done. Index is being rebuild after every deleted row.
 
